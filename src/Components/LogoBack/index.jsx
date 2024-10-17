@@ -7,7 +7,7 @@ const LogoBack = ({ onClick }) => {
             <h2 className='LogoStyle'>Logo</h2>
 
             <div className='arrow-back-section' onClick={onClick}>
-                <img src='/src/assets/BackArrow.png' width={10} height={18} className='arrow-back-img' />
+                <img src='/BackArrow.png' width={10} height={18} className='arrow-back-img' />
                 <p className='back-text'>Back</p>
             </div>
         </div>
