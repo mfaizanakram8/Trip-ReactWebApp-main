@@ -33,7 +33,7 @@ const PrefferredAirports = () => {
 
 
                     <div className='airports-search-box'>
-                        <img src="/src/assets/Cross.png" alt="CrossIcon" className='airports-cross-icon' />
+                        <img src="/Cross.png" alt="CrossIcon" className='airports-cross-icon' />
                         <span className='airports-search-box-text'>KHI - Karachi</span>
                     </div>
 
@@ -43,7 +43,7 @@ const PrefferredAirports = () => {
                 </div>
 
                 <div className='airports-right-side'>
-                    <img src="/src/assets/PreferredAirpot.png" alt="PreferredAirpot" className='airports-prefferred-image' />
+                    <img src="/PreferredAirpot.png" alt="PreferredAirpot" className='airports-prefferred-image' />
                 </div>
             </div>
         </div>

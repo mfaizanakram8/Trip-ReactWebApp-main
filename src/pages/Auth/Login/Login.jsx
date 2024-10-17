@@ -41,7 +41,7 @@ const Login = () => {
       </div>
 
       <div className='login-right-side'>
-        <img src="/src/assets/LoginImg.png" alt="LoginIlustration" className='login-image-style' />
+        <img src="/LoginImg.png" alt="LoginIlustration" className='login-image-style' />
       </div>
 
     </div>

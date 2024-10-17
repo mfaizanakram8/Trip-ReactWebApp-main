@@ -38,8 +38,8 @@ const SignUp = () => {
       </div>
 
       <div className='img-container'>
-        <img src="/src/assets/Google.png" alt="Google" width={65} className='google-apple-img' />
-        <img src="/src/assets/Apple.png" alt="Apple" width={65} className='google-apple-img' />
+        <img src="/Google.png" alt="Google" width={65} className='google-apple-img' />
+        <img src="/Apple.png" alt="Apple" width={65} className='google-apple-img' />
       </div>
 
       <div className='checkbox-term-container'>

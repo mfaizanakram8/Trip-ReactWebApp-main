@@ -26,7 +26,7 @@ const Welcome = () => {
             </div>
 
             <div className='welcome-rightside'>
-                <img src="/src/assets/Welcome.png" alt="OtpIlustration" className='welcome-image' />
+                <img src="/Welcome.png" alt="OtpIlustration" className='welcome-image' />
             </div>
 
         </div>

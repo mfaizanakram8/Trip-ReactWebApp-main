@@ -30,7 +30,7 @@ const LoginOtp = () => {
             </div>
 
             <div className='login-otp-rightside'>
-                <img src="/src/assets/LoginOtp.png" alt="OtpIlustration" className='login-otp-image' />
+                <img src="/LoginOtp.png" alt="OtpIlustration" className='login-otp-image' />
             </div>
         </div>
     )
