@@ -247,7 +247,7 @@ function SubscriptionPage() {
       </div>
       <div>
         {selectedPlan && ( // Only show the button when a plan is selected
-          <Button onClick={handleContinue} className="continue-button">
+          <Button onClick={handleContinue} className="continue-button1">
             Continue
           </Button>
         )}
