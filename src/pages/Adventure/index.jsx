@@ -13,7 +13,7 @@ function Accommodation() {
   };
 
   const handleContinue = () => {
-    navigate("/accommodations");
+    navigate("/subcription");
   };
 
   const images = [
@@ -77,7 +77,7 @@ function Accommodation() {
     <div className="accommodation-page">
       <div className="main-cont">
         <LogoBack onClick={handleBack} />
-        <div className="step-text">Step 2 of 4</div>
+        <div className="step-text">Step 3 of 4</div>
       </div>
 
       <div className="main-content flex justify-between items-start">

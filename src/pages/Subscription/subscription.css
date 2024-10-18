@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.step-text1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6F6F6F;
+    margin-left: 930px;
+    margin-top: 100px;
+  }
+  .title-text1{
+    font-size: 38px;
+    color: #7346D2;
+    font-weight: 700;
+    padding-top: 12vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .find-deals-text1{
+    font-size: 20px;
+    color: #6E6E6E;
+    padding-top: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .div-3{
+     border: 1px solid #D9D9D9;
+    width: 278px;
+    height: 244px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .m2-s{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .title-text2{
+    font-size: 20px;
+    color: #7346D2;
+    font-weight: 700;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .title-text3{
+    font-size: 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+  .paragrapgh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    
+  }
+  .blo{
+    display: block;
+  }
+  .toggle-billing {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .billing-toggle {
+    display: flex;
+    align-items: center;
+    background-color: #EFE8FE;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 3px;
+    width: 208px;
+    height: 30px;
+    position: relative;
+  }
+  
+  .billing-switch {
+    width: 50%;
+    height: 100%;
+    background-color: #7346D2;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: left 0.3s ease;
+  }
+  
+  .billing-text {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 1;
+    background-color: #EFE8FE;
+    position: relative;
+  }
+  
+  .billing-text span {
+    flex: 1;
+    text-align: center;
+    z-index: 2;
+    background-color: #EFE8FE;
+    transition: color 0.3s ease;
+    color: #333;
+  }
+  
+  .billing-toggle.active .billing-switch {
+    left: 50%; 
+    
+  }
+  
+  .billing-toggle .billing-text span.active {
+    color: #fff;
+    background-color: #7346D2; 
+  }
+  .pricing-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+    width: 1000px;
+    text-align: center;
+    margin-left: 180px;
+    justify-content: center;
+  }
+  
+  .table-header {
+    display: contents;
+  }
+  
+  .table-header h2 {
+    font-size: 18px;
+    color: #6d28d9; 
+    font-weight: bold;
+  }
+  
+  .table-row {
+    display: contents;
+    border-top: 1px solid #e5e7eb; 
+  }
+  
+  .table-row p {
+    font-size: 16px;
+    color: #6b7280; 
+    padding: 10px 0;
+  }
+  
+  .tick {
+    font-size: 24px;
+    color: #8b5cf6; 
+    width: 30px;
+    height: 30px;
+    background-color: #EFE8FE;
+    border: 2px solid #EFE8FE; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+  }
+  
+  .empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px; 
+  }
+  .lorem{
+    color: #7346D2;
+    font-weight: bold;
+    
+  }
+  .continue-button {
+    margin-left: 1100px;
+    width: 12vw;
+    height: 6.5vh;
+    margin-top: 30px;
+  }
+  

@@ -8,6 +8,7 @@ import Welcome from "./pages/Welcome"
 import PrefferredAirports from "./pages/PrefferredAirports"
 import Accommadations from "./pages/Accommadations"
 import Adventure from "./pages/Adventure"
+import Subscription from "./pages/Subscription"
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route eaxct path='/preferredairports' element={<PrefferredAirports />} />
         <Route eaxct path='/accommadations' element={<Accommadations/>} />
         <Route eaxct path='/adventure' element={<Adventure/>} />
+        <Route eaxct path='/subcription' element={<Subscription/>} />
       </Routes>
     </>
   )
