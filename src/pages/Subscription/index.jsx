@@ -3,11 +3,13 @@ import LogoBack from "../../Components/LogoBack";
 import { useNavigate } from "react-router-dom";
 import "./subscription.css";
 import Button from '../../Components/Button';
+import PopUp from '../../Components/PopUp';
 
 function SubscriptionPage() {
   const navigate = useNavigate();
   const [selectedPlan, setSelectedPlan] = useState(null);
   const [billingPeriod, setBillingPeriod] = useState("monthly");
+  const [showPopUp, setShowPopUp] = useState(false); 
 
   const handleBack = () => {
     navigate(-1);
@@ -22,7 +24,11 @@ function SubscriptionPage() {
   };
 
   const handleContinue = () => {
-    navigate('/');
+    setShowPopUp(true); 
+  };
+
+  const handleClosePopUp = () => {
+    setShowPopUp(false); 
   };
 
   return (
@@ -59,6 +65,7 @@ function SubscriptionPage() {
         </div>
 
         <div className="m2-s">
+          {/* Plans ko select karna */}
           <div
             className="div-3"
             style={{
@@ -125,7 +132,7 @@ function SubscriptionPage() {
               height={60}
               style={{
                 backgroundColor:
-                  selectedPlan === "premium" ? "#EFE8FE" : "#fff", 
+                  selectedPlan === "premium" ? "#EFE8FE" : "#fff",
               }}
             />
             <h1
@@ -141,7 +148,7 @@ function SubscriptionPage() {
               className="title-text3"
               style={{
                 backgroundColor:
-                  selectedPlan === "premium" ? "#EFE8FE" : "#fff", 
+                  selectedPlan === "premium" ? "#EFE8FE" : "#fff",
               }}
             >
               $400/ mo
@@ -169,7 +176,7 @@ function SubscriptionPage() {
           <div
             className="div-3"
             style={{
-              backgroundColor: selectedPlan === "elite" ? "#EFE8FE" : "#fff", 
+              backgroundColor: selectedPlan === "elite" ? "#EFE8FE" : "#fff",
             }}
             onClick={() => handlePlanClick("elite")}
           >
@@ -180,13 +187,13 @@ function SubscriptionPage() {
               width={60}
               height={60}
               style={{
-                backgroundColor: selectedPlan === "elite" ? "#EFE8FE" : "#fff", 
+                backgroundColor: selectedPlan === "elite" ? "#EFE8FE" : "#fff",
               }}
             />
             <h1
               className="title-text2"
               style={{
-                backgroundColor: selectedPlan === "elite" ? "#EFE8FE" : "#fff", 
+                backgroundColor: selectedPlan === "elite" ? "#EFE8FE" : "#fff",
               }}
             >
               Elite
@@ -202,7 +209,7 @@ function SubscriptionPage() {
             <p
               className="paragraph"
               style={{
-                backgroundColor: selectedPlan === "elite" ? "#EFE8FE" : "#fff", 
+                backgroundColor: selectedPlan === "elite" ? "#EFE8FE" : "#fff",
               }}
             >
               Lorem ipsum dolor sit amet,{" "}
@@ -218,6 +225,8 @@ function SubscriptionPage() {
             </p>
           </div>
         </div>
+
+      
         <div className="pricing-table">
           <div className="table-header">
             <div></div>
@@ -245,13 +254,17 @@ function SubscriptionPage() {
           </div>
         </div>
       </div>
+
       <div>
-        {selectedPlan && ( // Only show the button when a plan is selected
+        {selectedPlan && ( 
           <Button onClick={handleContinue} className="continue-button1">
             Continue
           </Button>
         )}
       </div>
+
+     
+      {showPopUp && <PopUp onClose={handleClosePopUp} />} 
     </div>
   );
 }
