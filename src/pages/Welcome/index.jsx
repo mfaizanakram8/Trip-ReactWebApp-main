@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './Welcome.css'
 import { useNavigate } from 'react-router-dom';
 import LogoBack from '../../Components/LogoBack';

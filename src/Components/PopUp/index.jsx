@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Popup.css';
+import './popup.css';
 
 const Popup = ({ isVisible, onClose }) => {
   return (
